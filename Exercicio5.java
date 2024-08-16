@@ -10,7 +10,10 @@ public class Exercicio5 {
 
         String[] diasSemana = {"Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"};
 
-        System.out.println(diasSemana[dia - 1]);
-
+        if (dia >= 1 && dia <= 7) {
+            System.out.println(diasSemana[dia - 1]);
+        } else {
+            System.out.println("Número inválido. Digite um número de 1 a 7.");
+        }
     }
 }
